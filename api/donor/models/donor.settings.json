@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "donors",
+  "info": {
+    "name": "donor"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "governorate": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "dateOfBirth": {
+      "type": "date"
+    },
+    "lastDonationDate": {
+      "type": "date"
+    },
+    "bloodGroup": {
+      "type": "enumeration",
+      "enum": [
+        "A+",
+        "B+",
+        "O+",
+        "A-",
+        "B-",
+        "O-",
+        "AB+",
+        "AB-"
+      ]
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": false
+    },
+    "medicalHistory": {
+      "type": "text",
+      "private": true
+    },
+    "user": {
+      "via": "donor",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "bloodbank": {
+      "via": "donors",
+      "model": "bloodbank"
+    }
+  }
+}

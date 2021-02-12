@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/bloodbankadmins",
+      "handler": "bloodbankadmin.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bloodbankadmins/count",
+      "handler": "bloodbankadmin.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bloodbankadmins/:id",
+      "handler": "bloodbankadmin.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/bloodbankadmins",
+      "handler": "bloodbankadmin.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/bloodbankadmins/:id",
+      "handler": "bloodbankadmin.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/bloodbankadmins/:id",
+      "handler": "bloodbankadmin.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

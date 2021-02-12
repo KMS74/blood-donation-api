@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/bloodbanks",
+      "handler": "bloodbank.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bloodbanks/get",
+      "handler": "bloodbank.getBloodBanks",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bloodbanks/count",
+      "handler": "bloodbank.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bloodbanks/:id",
+      "handler": "bloodbank.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/bloodbanks",
+      "handler": "bloodbank.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/bloodbanks/:id",
+      "handler": "bloodbank.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/bloodbanks/:id",
+      "handler": "bloodbank.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

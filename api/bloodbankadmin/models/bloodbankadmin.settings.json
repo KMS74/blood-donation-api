@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bloodbankadmins",
+  "info": {
+    "name": "bloodbankadmin"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "user": {
+      "via": "admin",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "bloodbank": {
+      "via": "admins",
+      "model": "bloodbank"
+    }
+  }
+}
